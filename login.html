@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Maven+Pro&family=Space+Grotesk:wght@700&family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        overflow: hidden;
+        height: 97.8vh;
+        background: #fc00ff;
+        background: -webkit-linear-gradient(135deg, #fc00ff, #00dbde);
+        background: linear-gradient(135deg, #fc00ff, #00dbde);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main_container {
+        width: 408px;
+        height: 523px;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+      .side_div_1,
+      .side_div_2,
+      .side_div_3,
+      .side_div_4 {
+        position: absolute;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.1)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .side_div_2,
+      .side_div_3,
+      .side_div_4 {
+        border-radius: 20px;
+      }
+      .side_div_1 {
+        width: 120px;
+        height: 120px;
+        left: 342px;
+        top: -50px;
+        z-index: 1;
+        border-radius: 50%;
+      }
+      .side_div_2 {
+        width: 88px;
+        height: 88px;
+        left: 362px;
+        top: 270px;
+        z-index: -10;
+      }
+      .side_div_3 {
+        width: 74px;
+        height: 74px;
+        left: -30px;
+        top: 475px;
+        z-index: -10;
+      }
+      .side_div_4 {
+        width: 100px;
+        height: 100px;
+        left: -45px;
+        top: -40px;
+        z-index: -10;
+      }
+      .mn {
+        height: 100%;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        padding: 55px;
+        flex-direction: column;
+      }
+      .inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .fp {
+        font-family: "Maven Pro";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #404040;
+      }
+      .sign_in {
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: "Space Grotesk";
+        padding: 10px 25px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.28);
+        border: none;
+        border-radius: 40px;
+      }
+      .input {
+        color: #ffffffeb;
+        position: relative;
+        width: 282px;
+        height: 40px;
+        font-family: "Urbanist";
+        font-weight: 400;
+        font-size: 15px;
+        padding-left: 20px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.72);
+        background: rgba(255, 255, 255, 0.28);
+        border: 0.5px solid #ebe9e9;
+        border-radius: 40px;
+      }
+      .input::placeholder {
+        color: rgba(255, 255, 255, 0.72);
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 67px;
+      }
+      .input:focus {
+        transition: all 0.2s;
+        outline: none;
+        height: 47px;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+      }
+      .sign-in {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .welcome {
+        font-family: "Comfortaa";
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 36px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container" data-tilt>
+      <div class="side_div_1"></div>
+      <div class="side_div_2"></div>
+      <div class="side_div_3"></div>
+      <div class="side_div_4"></div>
+      <div class="mn">
+        <span class="welcome">Welcome</span>
+        <div class="inputs">
+          <div class="input-box">
+            <input type="email" placeholder="Email" class="input" />
+            <input type="password" class="input" placeholder="Password" />
+          </div>
+          <div class="sign-in">
+            <button class="sign_in">Sign in</button>
+            <a href="#" class="fp">Forgot Password ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.js"></script>
+  </body>
+</html>
